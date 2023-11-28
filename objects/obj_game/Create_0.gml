@@ -1,12 +1,12 @@
 function start_game(){
 	with(instance_create_layer(room_width/2-30,room_height/2,"player",obj_player)){
 		_id = 0
-		color = 0
+		_color = 0
 		controls = [vk_up, vk_left, vk_down, vk_right, vk_shift]
 	}
 	with(instance_create_layer(room_width/2+30,room_height/2,"player",obj_player)){
 		_id = 1
-		color = 1
+		_color = 1
 		controls = [ord("W"), ord("A"), ord("S"), ord("D"), ord("E")]
 	}
 }

@@ -1,4 +1,4 @@
-color = 0
+_color = 0
 hand_selected = 0
 nbHands = 2
 longueurBrasMax = 40
@@ -9,6 +9,8 @@ handX[0] = x - 18
 handY[0] = y
 handX[1] = x + 18
 handY[1] = y
+handScale[0] = 1
+handScale[1] = 1
 
 XDir = x
 YDir = y
@@ -21,6 +23,7 @@ indicRot = 0
 indicSize = 1
 temps = 0
 control = true
+etourdi = false
 
 function mortAnimation(){
 	control = false

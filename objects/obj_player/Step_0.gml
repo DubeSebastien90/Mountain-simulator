@@ -29,18 +29,43 @@ handY[hand_selected] += vspd
 }
 
 //côtées de la montage
-if handX[hand_selected] < obj_game.borne{
-	handX[hand_selected] = obj_game.borne
+if handX[0] < obj_game.borne+5{
+	handX[0] = obj_game.borne+5
 }
-if handX[hand_selected] > room_width - obj_game.borne{
-	handX[hand_selected] = room_width - obj_game.borne
+if handX[0] > room_width - obj_game.borne - 5{
+	handX[0] = room_width - obj_game.borne - 5
+}
+if handX[1] < obj_game.borne+5{
+	handX[1] = obj_game.borne+5
+}
+if handX[1] > room_width - obj_game.borne-5{
+	handX[1] = room_width - obj_game.borne-5
 }
 
-if press_next{
+if press_next && control{
+	var _index = 0
+	var moi = self
+	with(obj_player){
+		if self != moi{
+			if position_meeting(moi.handX[moi.hand_selected], moi.handY[moi.hand_selected], self){
+				_index = _color + 1
+				control = false
+				etourdi = true
+				alarm[0] = 30
+			}
+		}
+	}
+	repeat(8){
+		with(instance_create_depth(handX[hand_selected], handY[hand_selected],depth - 1, obj_part_grab)){
+			image_index = _index
+		}
+	}
+	handScale[hand_selected] = 0.9
 	hand_selected += 1
 	hand_selected = hand_selected%2
 	XDir = (handX[0] + handX[1])/2
 	YDir = (handY[0] + handY[1])/2
+	handScale[hand_selected] = 1.1
 }
 
 dist = distance_to_point(XDir, YDir)
@@ -68,4 +93,4 @@ if y > obj_camera.y + (room_height/2)*0.7{
 }
 
 //animation
-image_index = color
+image_index = _color

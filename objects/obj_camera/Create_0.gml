@@ -18,4 +18,4 @@ zoom_lerp = 0.1
 offsetX = 0
 offsetY = 0
 
-autoScroll = 0.1
+autoScroll = 0.2
