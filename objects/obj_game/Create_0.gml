@@ -7,19 +7,21 @@ function start_game(){
 	with(instance_create_layer(room_width/2+30,room_height/2,"player",obj_player)){
 		_id = 1
 		color = 1
-		controls = [ord("W"), ord("A"), ord("S"), ord("D"), ord("Q")]
+		controls = [ord("W"), ord("A"), ord("S"), ord("D"), ord("E")]
 	}
 }
 
 function mort(_id){
-	game_state = 1
-	if _id = 0{
-		death_msg = "Player 2 wins"
-		colorText = c_orange
-	}
-	if _id = 1{
-		death_msg = "Player 1 wins"
-		colorText = c_blue
+	if game_state == 0{
+		game_state = 1
+		if _id = 0{
+			death_msg = "Player 2 wins"
+			colorText = c_orange
+		}
+		if _id = 1{
+			death_msg = "Player 1 wins"
+			colorText = c_blue
+		}
 	}
 }
 

@@ -20,3 +20,8 @@ walkspd = 0.8
 indicRot = 0
 indicSize = 1
 temps = 0
+control = true
+
+function mortAnimation(){
+	control = false
+}

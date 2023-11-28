@@ -11,3 +11,6 @@ if boulderCooldown < 0{
 }
 
 //mort
+if game_state == 1 && keyboard_check_pressed(vk_space){
+	game_restart()
+}

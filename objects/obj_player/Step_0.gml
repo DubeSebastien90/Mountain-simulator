@@ -9,8 +9,13 @@ press_next = keyboard_check_pressed(controls[4])
 var moveX = press_right - press_left
 var moveY = press_down - press_up
 
-hspd = walkspd*moveX
-vspd = walkspd*moveY
+if control{
+	hspd = walkspd*moveX
+	vspd = walkspd*moveY
+} else {
+	hspd = 0
+	vspd = 0
+}
 
 longueurBras = sqrt(power(((handX[hand_selected]+hspd)-x), 2) + power(((handY[hand_selected]+vspd)-y), 2))
 dirBras = point_direction(x, y, (handX[hand_selected]+hspd), ((handY[hand_selected]+vspd)))
@@ -58,7 +63,7 @@ x += _hspd
 y += _vspd
 
 //mort
-if y > obj_camera.y + room_width/2{
+if y > obj_camera.y + (room_height/2)*0.7{
 	obj_game.mort(_id)
 }
 
