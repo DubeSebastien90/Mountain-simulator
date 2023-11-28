@@ -1,2 +1,4 @@
-control = true
-etourdi = false
+if dead = false{
+	control = true
+	etourdi = false
+}

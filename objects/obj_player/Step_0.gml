@@ -48,11 +48,24 @@ if press_next && control{
 	with(obj_player){
 		if self != moi{
 			if position_meeting(moi.handX[moi.hand_selected], moi.handY[moi.hand_selected], self){
-				_index = _color + 1
+				_index = _color + 2
 				control = false
 				etourdi = true
-				alarm[0] = 30
+				alarm[0] = moi.knockoutCooldown
 			}
+		}
+	}
+	with(obj_boost){
+		if position_meeting(moi.handX[moi.hand_selected], moi.handY[moi.hand_selected], self){
+			if _type == 0{
+				moi.longueurBrasMax += 5
+			} else if _type == 1{
+				moi.walkspd += 0.2
+			} else{
+				moi.knockoutCooldown += 5
+			}
+			_index = 1
+			instance_destroy()
 		}
 	}
 	repeat(8){
@@ -71,6 +84,14 @@ if press_next && control{
 dist = distance_to_point(XDir, YDir)
 _hspd = dcos(point_direction(x, y, XDir, YDir)) * dist/10
 _vspd = -dsin(point_direction(x, y, XDir, YDir)) * dist/10
+
+if etourdi{
+	vspdGrav += grav
+	_vspd += vspdGrav
+} else {
+	vspdGrav = 0
+}
+
 if place_meeting(x+_hspd, y, obj_player){
 	while!(place_meeting(x+sign(_hspd), y, obj_player)){
 		x += sign(_hspd)
@@ -86,10 +107,16 @@ if place_meeting(x, y+_vspd, obj_player){
 
 x += _hspd
 y += _vspd
+if etourdi{
+	YDir = y
+	handY[0] += _vspd
+	handY[1] += _vspd
+}
 
 //mort
-if y > obj_camera.y + (room_height/2)*0.7{
+if y > obj_camera.y + (room_height/2)*0.7 && !dead{
 	obj_game.mort(_id)
+	mortAnimation()
 }
 
 //animation

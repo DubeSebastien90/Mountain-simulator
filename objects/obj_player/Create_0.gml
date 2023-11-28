@@ -24,7 +24,13 @@ indicSize = 1
 temps = 0
 control = true
 etourdi = false
+dead = false
+knockoutCooldown = 30
+
+grav = 0.03
+vspdGrav = 0
 
 function mortAnimation(){
 	control = false
+	dead = true
 }

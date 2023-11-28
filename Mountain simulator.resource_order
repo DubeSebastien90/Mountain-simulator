@@ -22,6 +22,7 @@
     {"name":"spr_mountain","order":3,"path":"sprites/spr_mountain/spr_mountain.yy",},
     {"name":"obj_camera","order":2,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"spr_part_grab","order":7,"path":"sprites/spr_part_grab/spr_part_grab.yy",},
+    {"name":"obj_boost","order":7,"path":"objects/obj_boost/obj_boost.yy",},
     {"name":"spr_boosts","order":8,"path":"sprites/spr_boosts/spr_boosts.yy",},
     {"name":"obj_boulder","order":4,"path":"objects/obj_boulder/obj_boulder.yy",},
     {"name":"obj_part_boulder","order":5,"path":"objects/obj_part_boulder/obj_part_boulder.yy",},

@@ -40,6 +40,7 @@
     {"id":{"name":"spr_mountain","path":"sprites/spr_mountain/spr_mountain.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"spr_part_grab","path":"sprites/spr_part_grab/spr_part_grab.yy",},},
+    {"id":{"name":"obj_boost","path":"objects/obj_boost/obj_boost.yy",},},
     {"id":{"name":"spr_boosts","path":"sprites/spr_boosts/spr_boosts.yy",},},
     {"id":{"name":"obj_boulder","path":"objects/obj_boulder/obj_boulder.yy",},},
     {"id":{"name":"obj_part_boulder","path":"objects/obj_part_boulder/obj_part_boulder.yy",},},
