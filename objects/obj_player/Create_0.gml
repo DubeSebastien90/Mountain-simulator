@@ -1,7 +1,7 @@
 _color = 0
 hand_selected = 0
 nbHands = 2
-longueurBrasMax = 40
+longueurBrasMax = 30
 longueurBras = 0
 dirBras = 0
 

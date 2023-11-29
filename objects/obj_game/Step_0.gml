@@ -25,4 +25,4 @@ if game_state == 1 && keyboard_check_pressed(vk_space){
 	game_restart()
 }
 
-borne += 0.01
+borne += 0.018

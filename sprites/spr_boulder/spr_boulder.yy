@@ -13,10 +13,10 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26ccb1ec-537e-47f3-9e09-9ad231d0535c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9229546d-4d9d-4b1b-a436-7ff6d07a9435",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"61237e98-bc6e-4148-b214-30bfae4e4ea6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26ccb1ec-537e-47f3-9e09-9ad231d0535c",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5ed9ade5-ab42-41e0-8484-6fff2dc716c1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9229546d-4d9d-4b1b-a436-7ff6d07a9435",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -57,10 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"26ccb1ec-537e-47f3-9e09-9ad231d0535c","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"f1f0b460-16bb-4442-9291-2217b0544d62","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9229546d-4d9d-4b1b-a436-7ff6d07a9435","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"1daa97c6-dc7b-4be0-8481-116aae5af090","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"61237e98-bc6e-4148-b214-30bfae4e4ea6","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"9db7ee63-eaa0-41af-8120-38f0b1f7d895","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5ed9ade5-ab42-41e0-8484-6fff2dc716c1","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"18962f85-b700-4656-9c8b-aa8fa5c0675b","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"61237e98-bc6e-4148-b214-30bfae4e4ea6","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"9db7ee63-eaa0-41af-8120-38f0b1f7d895","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"26ccb1ec-537e-47f3-9e09-9ad231d0535c","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"f1f0b460-16bb-4442-9291-2217b0544d62","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5ed9ade5-ab42-41e0-8484-6fff2dc716c1","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"18962f85-b700-4656-9c8b-aa8fa5c0675b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9229546d-4d9d-4b1b-a436-7ff6d07a9435","path":"sprites/spr_boulder/spr_boulder.yy",},},},"Disabled":false,"id":"1daa97c6-dc7b-4be0-8481-116aae5af090","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
