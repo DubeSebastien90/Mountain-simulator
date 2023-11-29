@@ -121,3 +121,4 @@ if y > obj_camera.y + (room_height/2)*0.7 && !dead{
 
 //animation
 image_index = _color
+image_angle = (handY[0] - handY[1])

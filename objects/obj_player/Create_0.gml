@@ -34,3 +34,7 @@ function mortAnimation(){
 	control = false
 	dead = true
 }
+
+image_angle = 0
+tempsAnim = 0
+imageIndex = 0

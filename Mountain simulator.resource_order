@@ -23,7 +23,9 @@
     {"name":"obj_camera","order":2,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"spr_part_grab","order":7,"path":"sprites/spr_part_grab/spr_part_grab.yy",},
     {"name":"obj_boost","order":7,"path":"objects/obj_boost/obj_boost.yy",},
+    {"name":"spr_stars","order":11,"path":"sprites/spr_stars/spr_stars.yy",},
     {"name":"spr_boosts","order":8,"path":"sprites/spr_boosts/spr_boosts.yy",},
+    {"name":"spr_bras","order":10,"path":"sprites/spr_bras/spr_bras.yy",},
     {"name":"obj_boulder","order":4,"path":"objects/obj_boulder/obj_boulder.yy",},
     {"name":"obj_part_boulder","order":5,"path":"objects/obj_part_boulder/obj_part_boulder.yy",},
     {"name":"spr_player_hands","order":1,"path":"sprites/spr_player_hands/spr_player_hands.yy",},
@@ -31,7 +33,6 @@
     {"name":"spr_boulder","order":5,"path":"sprites/spr_boulder/spr_boulder.yy",},
     {"name":"spr_part_boulder","order":6,"path":"sprites/spr_part_boulder/spr_part_boulder.yy",},
     {"name":"obj_part_grab","order":6,"path":"objects/obj_part_grab/obj_part_grab.yy",},
-    {"name":"spr_stars","order":9,"path":"sprites/spr_stars/spr_stars.yy",},
     {"name":"spr_background","order":4,"path":"sprites/spr_background/spr_background.yy",},
   ],
 }
