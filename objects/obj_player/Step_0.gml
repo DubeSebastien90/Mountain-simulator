@@ -68,6 +68,11 @@ if press_next && control{
 			instance_destroy()
 		}
 	}
+	with(obj_wazo_collision){
+		if position_meeting(moi.handX[moi.hand_selected], moi.handY[moi.hand_selected], self){
+			myBird.mortAbility()
+		}
+	}
 	repeat(8){
 		with(instance_create_depth(handX[hand_selected], handY[hand_selected],depth - 3, obj_part_grab)){
 			image_index = _index

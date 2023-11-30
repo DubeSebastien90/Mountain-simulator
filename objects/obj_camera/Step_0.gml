@@ -8,9 +8,12 @@ with(obj_player){
 }
 
 //update destination
+if obj_game.nb_alive_players > 0{
 xTo = _X/obj_game.nb_alive_players
+} else xTo = room_width/2
+
 yTo -= autoScroll
-}
+} else xTo = room_width/2
 
 //offsetX = lerp(offsetX,follow.hspd*15,0.01)
 //offsetY = lerp(offsetY,follow.vspd*7,0.01)

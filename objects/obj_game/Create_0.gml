@@ -33,6 +33,9 @@ function _start_game(nbPlayers){
 }
 
 function mort(_idDead){
+	if game_state = 1{
+		nb_alive_players -= 1
+	}
 	if game_state = 0{
 	if nb_players > 1{
 	if arrayMort[_idDead] = false{
@@ -51,7 +54,8 @@ function mort(_idDead){
 		}
 	}
 	} else{
-		colorText = c_black
+		nb_alive_players -= 1
+		colorText = c_white
 		death_msg = "Game over"
 		game_state = 1
 	}
@@ -69,6 +73,8 @@ maxPlayers = 3
 window_set_caption("Mountain simulator")
 
 borne = 200
+borneDebut = borne
 borneMax = 200
 boulderCooldown = random_range(200,300)
 powerUpCooldown = random_range(600,800)
+wazoCooldown = random_range(1000,1100)

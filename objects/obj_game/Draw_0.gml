@@ -11,7 +11,7 @@ if game_state == 1{
 	draw_set_color(c_white)
 	draw_text_transformed(obj_camera.x,obj_camera.y - 50,"Press space to restart",1,1,0)
 }
-
+draw_text(room_width/2,room_height/2,nb_alive_players)
 if game_state == 2{
 	draw_set_alpha(0.6)
 	draw_set_color(c_black)

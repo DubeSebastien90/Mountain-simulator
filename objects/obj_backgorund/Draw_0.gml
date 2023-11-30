@@ -12,7 +12,7 @@ draw_sprite_ext(spr_mountain,0,obj_game.borne,1000,room_width - 2*obj_game.borne
 
 //trucs
 for(var i = 0; i < 300; i++){
-	draw_sprite(spr_mountain_square,0,room_width/2 + (tacheX[i]*obj_game.borneMax/obj_game.borne),tacheY[i])
+	draw_sprite(spr_mountain_square,0,room_width/2 + (tacheX[i]*((obj_game.borne-(room_width/2-10))/((room_width/2-10)-obj_game.borneDebut))),tacheY[i])
 }
 
 //côté montage

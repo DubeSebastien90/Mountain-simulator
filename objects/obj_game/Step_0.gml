@@ -15,6 +15,7 @@ if boulderCooldown < 0{
 //powerUps
 if game_state != 2{
 	powerUpCooldown -= 1
+	wazoCooldown -= 1
 }
 if powerUpCooldown < 0{
 	with(instance_create_layer(random_range(borne+20,room_width-borne-20),obj_camera.y - room_height/2 - 30,"boulders", obj_boost)){
@@ -22,6 +23,12 @@ if powerUpCooldown < 0{
 		depth -= 1
 	}
 	powerUpCooldown = random_range(600,800)
+}
+
+//wazo
+if wazoCooldown < 0{
+	wazoCooldown = random_range(600,800)
+	instance_create_layer(choose(0,room_width),obj_camera.y + random_range(-70,10),"boulders",obj_wazo)
 }
 
 //mort
