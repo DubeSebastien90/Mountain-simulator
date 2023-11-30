@@ -24,6 +24,7 @@ image_speed = 1.85
 depth -= 3
 
 function mortAbility(){
+	obj_son.play_sound(snd_bird_dead,0.05)
 	with(myCollision){
 		instance_destroy()
 	}

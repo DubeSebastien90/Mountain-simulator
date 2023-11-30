@@ -48,18 +48,21 @@ if game_state == 1 && keyboard_check_pressed(vk_space){
 if game_state == 2{
 	if keyboard_check_pressed(vk_space){
 		_start_game(nb_players)
+		obj_son.play_sound(snd_grab,0.1)
 	}
 	if keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))  or keyboard_check_pressed(ord("H")){
 		nb_players -= 1
 		if nb_players < 1{
 			nb_players = maxPlayers
 		}
+		obj_son.play_sound(snd_grab,0.1)
 	}
 	if keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))  or keyboard_check_pressed(ord("K")){
 		nb_players += 1
 		if nb_players > maxPlayers{
 			nb_players = 1
 		}
+		obj_son.play_sound(snd_grab,0.1)
 	}
 }
 

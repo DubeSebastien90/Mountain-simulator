@@ -52,6 +52,7 @@ if press_next && control{
 				control = false
 				etourdi = true
 				alarm[0] = moi.knockoutCooldown
+				obj_son.play_sound(snd_clap,0.1)
 			}
 		}
 	}
@@ -65,6 +66,7 @@ if press_next && control{
 				moi.knockoutCooldown += 5
 			}
 			_index = 1
+			obj_son.play_sound(snd_boost,0.1)
 			instance_destroy()
 		}
 	}
@@ -76,12 +78,18 @@ if press_next && control{
 				text = "+5"
 			}
 			}
+			_index = 1
 			myBird.mortAbility()
+			obj_son.play_sound(snd_clap,0.1)
 		}
+	}
+	if _index = 0{
+		obj_son.play_sound(snd_grab,0.1)
 	}
 	repeat(8){
 		with(instance_create_depth(handX[hand_selected], handY[hand_selected],depth - 3, obj_part_grab)){
 			image_index = _index
+			
 		}
 	}
 	handScale[hand_selected] = 0.9
