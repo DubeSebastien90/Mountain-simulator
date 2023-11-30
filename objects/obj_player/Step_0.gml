@@ -158,7 +158,7 @@ if etourdi{
 
 //mort
 if y > obj_camera.y + (room_height/2)*0.7 && !dead{
-	
+	obj_son.play_sound_low(snd_cri)
 	obj_game.mort(_id)
 	mortAnimation()
 }
