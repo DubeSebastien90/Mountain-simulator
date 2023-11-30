@@ -1,4 +1,7 @@
-function start_game(nbPlayers){
+function _start_game(nbPlayers){
+	game_state = 0
+	nb_players = nbPlayers
+	nb_alive_players = nb_players
 	for(var i = 0; i < nbPlayers; i++){
 		arrayMort[i] = false
 	}
@@ -23,6 +26,7 @@ function start_game(nbPlayers){
 	with(instance_create_layer(room_width/2,room_height/2 - 30,"player",obj_player)){
 		_id = 2
 		_color = 2
+		offset = -20
 		controls = [ord("U"), ord("H"), ord("J"), ord("K"), ord("I")]
 	}
 	}
@@ -54,15 +58,16 @@ function mort(_idDead){
 	}
 }
 
-game_state = 0
+game_state = 2
 death_msg = ""
-colorText = noone
+colorText = c_black
 
 nb_players = 2
-nb_alive_players = nb_players
-start_game(nb_players)
+nb_alive_players = 2
+maxPlayers = 3
 
-randomize()
+window_set_caption("Mountain simulator")
+
 borne = 200
 boulderCooldown = random_range(200,300)
 powerUpCooldown = random_range(600,800)

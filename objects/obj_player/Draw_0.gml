@@ -1,5 +1,13 @@
+//controles
+controlShow -= 1
+if controlShow < 0{
+	controlAlpha = lerp(controlAlpha,0,0.1)
+}
+draw_sprite_ext(spr_player_controls,_color,controlX,controlY+offset,1,1,0,c_white,controlAlpha)
+
+
 //corps
-draw_self()
+draw_sprite_ext(sprite_index,image_index,x,y,1,1,rot,c_white,1)
 draw_sprite_ext(spr_player_hands,_color,handX[0],handY[0],handScale[0],handScale[0],point_direction(x,y+10,handX[0],handY[0])-90,c_white,1)
 draw_sprite_ext(spr_player_hands,_color,handX[1],handY[1],-1*handScale[1],handScale[1],point_direction(x,y+10,handX[1],handY[1])-90,c_white,1)
 

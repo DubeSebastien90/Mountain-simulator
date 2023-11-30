@@ -38,3 +38,10 @@ function mortAnimation(){
 image_angle = 0
 tempsAnim = 0
 imageIndex = 0
+rot = 0
+
+controlX = x
+controlY = y
+offset = 35
+controlShow = 300
+controlAlpha = 1

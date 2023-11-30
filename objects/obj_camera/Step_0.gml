@@ -1,11 +1,13 @@
 var _X = 0
 
+if instance_exists(obj_player){
 with(obj_player){
 	_X += x
 }
 
 x = _X/instance_number(obj_player)
 y -= autoScroll
+}
 
 
 //update destination

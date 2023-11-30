@@ -69,7 +69,7 @@ if press_next && control{
 		}
 	}
 	repeat(8){
-		with(instance_create_depth(handX[hand_selected], handY[hand_selected],depth - 1, obj_part_grab)){
+		with(instance_create_depth(handX[hand_selected], handY[hand_selected],depth - 3, obj_part_grab)){
 			image_index = _index
 		}
 	}
@@ -105,6 +105,15 @@ if place_meeting(x, y+_vspd, obj_player){
 	_vspd = 0
 }
 
+if place_meeting(x+_hspd, y+_vspd, obj_player){
+	while!(place_meeting(x+sign(hspd),y+sign(_vspd), obj_player)){
+		y += sign(_vspd)
+		x += sign(_hspd)
+	}
+	_vspd = 0
+	_hspd = 0
+}
+
 x += _hspd
 y += _vspd
 if etourdi{
@@ -121,4 +130,4 @@ if y > obj_camera.y + (room_height/2)*0.7 && !dead{
 
 //animation
 image_index = _color
-image_angle = (handY[0] - handY[1])
+rot = (handY[0] - handY[1])
