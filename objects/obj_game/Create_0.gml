@@ -7,12 +7,15 @@ function _start_game(nbPlayers){
 	}
 	if nbPlayers > 0{
 	var xPos = 0
-	if nbPlayers > 1
+	var ctr = ord("E")
+	if nbPlayers > 1{
 		xPos = 30
+		ctr = ord("Q")
+	}
 	with(instance_create_layer(room_width/2-xPos,room_height/2,"player",obj_player)){
 		_id = 0
 		_color = 0
-		controls = [ord("W"), ord("A"), ord("S"), ord("D"), ord("E")]
+		controls = [ord("W"), ord("A"), ord("S"), ord("D"), ctr]
 	}
 	}
 	if nbPlayers > 1{

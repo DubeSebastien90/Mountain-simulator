@@ -13,8 +13,10 @@ for(var i = 0; i < 200; i++){
 }
 
 yOffset = 0
+side = 1
 for(var i = 0; i < 300; i++){
-	tacheX[i] = random_range(-(((room_width-2*obj_game.borne)/2)-20),(room_width-2*obj_game.borne)/2-20)
+	tacheX[i] = random_range(0,(room_width-2*obj_game.borne)/2-20)*side
+	side*=-1
 	tacheY[i] = room_height - 10 - yOffset
 	yOffset += random_range(12,20)*(1+(i/50))
 }

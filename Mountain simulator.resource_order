@@ -15,10 +15,10 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sons","order":3,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
-    {"name":"gr_spr_player","order":17,"path":"folders/Sprites/gr_spr_player.yy",},
-    {"name":"Tile sets","order":2,"path":"folders/Tile sets.yy",},
     {"name":"gr_spr_back","order":23,"path":"folders/Sprites/gr_spr_back.yy",},
     {"name":"gr_spr_part","order":24,"path":"folders/Sprites/gr_spr_part.yy",},
+    {"name":"gr_spr_player","order":17,"path":"folders/Sprites/gr_spr_player.yy",},
+    {"name":"Tile sets","order":2,"path":"folders/Tile sets.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_wazoCollision","order":21,"path":"sprites/spr_wazoCollision/spr_wazoCollision.yy",},

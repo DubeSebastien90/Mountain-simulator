@@ -3,7 +3,11 @@ controlShow -= 1
 if controlShow < 0{
 	controlAlpha = lerp(controlAlpha,0,0.1)
 }
-draw_sprite_ext(spr_player_controls,_color,controlX,controlY+offset,1,1,0,c_white,controlAlpha)
+var popo = 0
+if obj_game.nb_players = 1{
+	popo = obj_game.maxPlayers
+}
+draw_sprite_ext(spr_player_controls,_color+popo,controlX,controlY+offset,1,1,0,c_white,controlAlpha)
 
 
 //corps
@@ -26,5 +30,6 @@ if control{
 	temps += 0.05
 	indicRot = temps*10
 	indicSize = sin(temps)*0.1 + 1 
+
 	draw_sprite_ext(spr_cible,_color,handX[hand_selected], handY[hand_selected], indicSize, indicSize, indicRot, c_white,0.6)
 }

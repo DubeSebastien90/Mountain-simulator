@@ -68,9 +68,9 @@ if game_state == 2{
 
 if game_state !=2{
 	if nb_alive_players > 0{
-		if borne < room_width/2 - 10{
+		if borne < room_width/2 - 20{
 			borne += 0.018
-		} else borne = room_width/2 - 10
+		} else borne = room_width/2 - 20
 	}
 }
 if game_state != 2 && nb_players = 1{
