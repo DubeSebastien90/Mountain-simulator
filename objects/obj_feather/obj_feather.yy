@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets",
-    "path": "folders/Objets.yy",
+    "name": "gr_obj_part",
+    "path": "folders/Objets/gr_obj_part.yy",
   },
   "parentObjectId": null,
   "persistent": false,

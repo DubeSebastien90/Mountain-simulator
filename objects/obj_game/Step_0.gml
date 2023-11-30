@@ -19,10 +19,18 @@ if game_state != 2{
 }
 if powerUpCooldown < 0{
 	with(instance_create_layer(random_range(borne+20,room_width-borne-20),obj_camera.y - room_height/2 - 30,"boulders", obj_boost)){
-		_type = choose(0,1,2)
+		if obj_game.nb_players == 1{
+			_type = choose(0,1)
+		} else {
+			_type = choose(0,1,2)
+		}
 		depth -= 1
 	}
-	powerUpCooldown = random_range(600,800)
+	if obj_game.nb_players == 1{
+		powerUpCooldown = random_range(900,1100)
+	} else {
+		powerUpCooldown = random_range(600,800)
+	}
 }
 
 //wazo
@@ -59,4 +67,10 @@ if game_state != 2{
 	if borne < room_width/2 - 10{
 		borne += 0.018
 	} else borne = room_width/2 - 10
+}
+if game_state != 2 && nb_players = 1{
+	_score = round((-(obj_camera.y-room_height/2))/10)+addup
+	if game_state = 1{
+		_score = scoreFinal
+	}
 }

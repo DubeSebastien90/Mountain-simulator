@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_part_boulder",
+  "name": "obj_son",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "gr_obj_part",
-    "path": "folders/Objets/gr_obj_part.yy",
+    "name": "Objets",
+    "path": "folders/Objets.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_part_boulder",
-    "path": "sprites/spr_part_boulder/spr_part_boulder.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

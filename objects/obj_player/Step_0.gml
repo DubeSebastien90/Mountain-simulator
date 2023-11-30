@@ -70,6 +70,12 @@ if press_next && control{
 	}
 	with(obj_wazo_collision){
 		if position_meeting(moi.handX[moi.hand_selected], moi.handY[moi.hand_selected], self){
+			obj_game.addup += 5
+			if obj_game.nb_players = 1{
+			with(instance_create_depth(x,y,depth-1,obj_textShow)){
+				text = "+5"
+			}
+			}
 			myBird.mortAbility()
 		}
 	}

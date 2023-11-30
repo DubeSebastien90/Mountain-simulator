@@ -58,6 +58,7 @@ function mort(_idDead){
 		colorText = c_white
 		death_msg = "Game over"
 		game_state = 1
+		scoreFinal = _score
 	}
 	}
 }
@@ -78,3 +79,7 @@ borneMax = 200
 boulderCooldown = random_range(200,300)
 powerUpCooldown = random_range(600,800)
 wazoCooldown = random_range(1000,1100)
+
+_score = 0
+addup = 0
+scoreFinal = 0

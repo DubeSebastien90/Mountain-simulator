@@ -9,9 +9,20 @@ if game_state == 1{
 	draw_set_halign(fa_center)
 	draw_text_transformed(obj_camera.x,obj_camera.y - 100,death_msg,2,2,0)
 	draw_set_color(c_white)
+	if nb_players = 1{
+		draw_text_transformed(obj_camera.x,obj_camera.y - 75,"Your score :" + string(scoreFinal),1,1,0)
+	}
 	draw_text_transformed(obj_camera.x,obj_camera.y - 50,"Press space to restart",1,1,0)
 }
-draw_text(room_width/2,room_height/2,nb_alive_players)
+
+if nb_players == 1 && game_state != 2{
+	draw_set_font(fnt_pixel)
+	draw_set_color(c_black)
+	draw_set_valign(fa_top)
+	draw_set_halign(fa_left)
+	draw_text_transformed(obj_camera.x - (room_width/2)*obj_camera.zoom_ammount + 2,obj_camera.y - (room_height/2)*obj_camera.zoom_ammount,"Score :" + string(_score),0.7,0.7,0)
+}
+
 if game_state == 2{
 	draw_set_alpha(0.6)
 	draw_set_color(c_black)
