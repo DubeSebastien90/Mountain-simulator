@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 6,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "gr_spr_back",
+    "path": "folders/Sprites/gr_spr_back.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

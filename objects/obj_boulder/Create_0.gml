@@ -9,5 +9,6 @@ function mortAnimation(){
 		instance_create_depth(x,y,depth,obj_part_boulder)
 	}
 	screenShake(4,10)
+	obj_son.play_sound(snd_boulderCrash,0.1)
 	instance_destroy()
 }	

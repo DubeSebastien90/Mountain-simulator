@@ -1,9 +1,17 @@
 //contorls
+if !mouse_control{
 press_up = keyboard_check(controls[0])
 press_left = keyboard_check(controls[1])
 press_down = keyboard_check(controls[2])
 press_right = keyboard_check(controls[3])
 press_next = keyboard_check_pressed(controls[4])
+} else{
+	press_up = mouse_y < handY[hand_selected] + sensitivity_mouse
+	press_left = mouse_x < handX[hand_selected] + sensitivity_mouse
+	press_down = mouse_y > handY[hand_selected] - sensitivity_mouse
+	press_right = mouse_x > handX[hand_selected] - sensitivity_mouse
+	press_next = mouse_check_button_pressed(mb_left)
+}
 
 //mouvement
 var moveX = press_right - press_left
@@ -40,6 +48,13 @@ if handX[1] < obj_game.borne+5{
 }
 if handX[1] > room_width - obj_game.borne-5{
 	handX[1] = room_width - obj_game.borne-5
+}
+
+if handY[0] < obj_camera.y - room_height/2*obj_camera.zoom_ammount{
+	handY[0] = obj_camera.y - room_height/2*obj_camera.zoom_ammount
+}
+if handY[1] < obj_camera.y - room_height/2*obj_camera.zoom_ammount{
+	handY[1] = obj_camera.y - room_height/2*obj_camera.zoom_ammount
 }
 
 if press_next && control{
@@ -143,6 +158,7 @@ if etourdi{
 
 //mort
 if y > obj_camera.y + (room_height/2)*0.7 && !dead{
+	
 	obj_game.mort(_id)
 	mortAnimation()
 }

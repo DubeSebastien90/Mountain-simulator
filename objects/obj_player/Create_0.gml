@@ -33,6 +33,7 @@ vspdGrav = 0
 function mortAnimation(){
 	control = false
 	dead = true
+	etourdi = true
 }
 
 image_angle = 0
@@ -45,3 +46,6 @@ controlY = y
 offset = 35
 controlShow = 300
 controlAlpha = 1
+
+mouse_control = false
+sensitivity_mouse = 2

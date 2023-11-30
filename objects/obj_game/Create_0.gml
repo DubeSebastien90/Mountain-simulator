@@ -27,7 +27,8 @@ function _start_game(nbPlayers){
 		_id = 2
 		_color = 2
 		offset = -20
-		controls = [ord("U"), ord("H"), ord("J"), ord("K"), ord("I")]
+		//controls = [ord("U"), ord("H"), ord("J"), ord("K"), ord("I")]
+		mouse_control = true
 	}
 	}
 }
@@ -47,10 +48,11 @@ function mort(_idDead){
 				if arrayMort[i] = false
 					_idWin = i
 			}
-			arrayColors = [c_blue, c_orange, c_green]
+			arrayColors = [c_blue, c_red, c_green]
 			game_state = 1
 			colorText = arrayColors[_idWin]
 			death_msg = "Player " + string(_idWin + 1) + " wins"
+			obj_son.play_sound_normal(snd_win)
 		}
 	}
 	} else{
@@ -59,6 +61,9 @@ function mort(_idDead){
 		death_msg = "Game over"
 		game_state = 1
 		scoreFinal = _score
+		if scoreFinal >= 100{
+			obj_son.play_sound_normal(snd_win)
+		} else obj_son.play_sound_normal(snd_loose)
 	}
 	}
 }

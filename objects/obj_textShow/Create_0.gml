@@ -4,4 +4,4 @@ text = ""
 rot = random_range(-10,10)
 rotSpeed = random_range(0.05,0.15) * sign(rot)
 scale = 3
-color = c_black
+color = c_white
