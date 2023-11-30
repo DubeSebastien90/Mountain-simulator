@@ -2,19 +2,14 @@ var _X = 0
 
 if instance_exists(obj_player){
 with(obj_player){
+	if !dead{
 	_X += x
+	}
 }
-
-x = _X/instance_number(obj_player)
-y -= autoScroll
-}
-
 
 //update destination
-if (instance_exists(follow)) 
-{
-	xTo = follow.x +offsetX;
-	yTo = follow.y +offsetY;
+xTo = _X/obj_game.nb_alive_players
+yTo -= autoScroll
 }
 
 //offsetX = lerp(offsetX,follow.hspd*15,0.01)

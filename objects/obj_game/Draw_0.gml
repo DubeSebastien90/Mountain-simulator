@@ -7,9 +7,9 @@ if game_state == 1{
 	draw_set_color(colorText)
 	draw_set_valign(fa_middle)
 	draw_set_halign(fa_center)
-	draw_text_transformed(room_width/2,obj_camera.y - 100,death_msg,2,2,0)
+	draw_text_transformed(obj_camera.x,obj_camera.y - 100,death_msg,2,2,0)
 	draw_set_color(c_white)
-	draw_text_transformed(room_width/2,obj_camera.y - 50,"Press space to restart",1,1,0)
+	draw_text_transformed(obj_camera.x,obj_camera.y - 50,"Press space to restart",1,1,0)
 }
 
 if game_state == 2{
@@ -21,7 +21,7 @@ if game_state == 2{
 	draw_set_color(c_white)
 	draw_set_valign(fa_middle)
 	draw_set_halign(fa_center)
-	draw_text_transformed(room_width/2,obj_camera.y - 60,"Select the number of players",0.9,0.9,0)
-	draw_text_transformed(room_width/2,obj_camera.y - 30,"<  " + string(nb_players) + "  >",0.9,0.9,0)
-	draw_text_transformed(room_width/2,obj_camera.y,"Press space to start",0.9,0.9,0)
+	draw_text_transformed(obj_camera.x,obj_camera.y - 60,"Select the number of players",0.9,0.9,0)
+	draw_text_transformed(obj_camera.x,obj_camera.y - 30,"<  " + string(nb_players) + "  >",0.9,0.9,0)
+	draw_text_transformed(obj_camera.x,obj_camera.y,"Press space to start",0.9,0.9,0)
 }

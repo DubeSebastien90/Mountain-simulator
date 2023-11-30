@@ -3,8 +3,8 @@ y = room_height/2
 
 cam = view_camera[0]; 
 follow = self; 
-xTo = xstart; 
-yTo = ystart; 
+xTo = x; 
+yTo = y; 
 shake_lenght = 0; 
 shake_magnitude = 6; 
 shake_remain = 6;

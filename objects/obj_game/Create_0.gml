@@ -69,5 +69,6 @@ maxPlayers = 3
 window_set_caption("Mountain simulator")
 
 borne = 200
+borneMax = 200
 boulderCooldown = random_range(200,300)
 powerUpCooldown = random_range(600,800)

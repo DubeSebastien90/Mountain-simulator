@@ -10,6 +10,11 @@ for(var i = 0; i < 200; i++){
 //montagne
 draw_sprite_ext(spr_mountain,0,obj_game.borne,1000,room_width - 2*obj_game.borne,1000000,0,c_white,1)
 
+//trucs
+for(var i = 0; i < 300; i++){
+	draw_sprite(spr_mountain_square,0,room_width/2 + (tacheX[i]*obj_game.borneMax/obj_game.borne),tacheY[i])
+}
+
 //côté montage
 for(var i = 0; i < 100; i++){
 	draw_sprite_ext(spr_mountain_side,mountainSideL[i],obj_game.borne,room_height - i*40,-1,1,0,c_white,1)
