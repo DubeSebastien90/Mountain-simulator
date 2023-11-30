@@ -91,3 +91,4 @@ wazoCooldown = random_range(1000,1100)
 _score = 0
 addup = 0
 scoreFinal = 0
+tempsScale = 0

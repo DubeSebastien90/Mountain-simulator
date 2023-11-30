@@ -68,9 +68,9 @@ if game_state == 2{
 
 if game_state !=2{
 	if nb_alive_players > 0{
-		if borne < room_width/2 - 20{
+		if borne < room_width/2 - 30{
 			borne += 0.018
-		} else borne = room_width/2 - 20
+		} else borne = room_width/2 - 30
 	}
 }
 if game_state != 2 && nb_players = 1{
@@ -78,4 +78,8 @@ if game_state != 2 && nb_players = 1{
 	if game_state = 1{
 		_score = scoreFinal
 	}
+}
+
+if game_state != 2{
+	tempsScale += 1/60
 }

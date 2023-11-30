@@ -30,7 +30,7 @@ if nb_players == 1 && game_state = 0{
 if game_state == 2{
 	draw_set_alpha(0.6)
 	draw_set_color(c_black)
-	draw_rectangle(0,obj_camera.y - 75,room_width,obj_camera.y+15,false)
+	draw_rectangle(0,obj_camera.y - 75,room_width,obj_camera.y+95,false)
 	draw_set_alpha(1)
 	draw_set_font(fnt_pixel)
 	draw_set_color(c_white)
@@ -39,4 +39,10 @@ if game_state == 2{
 	draw_text_transformed(obj_camera.x,obj_camera.y - 60,"Select the number of players",0.9,0.9,0)
 	draw_text_transformed(obj_camera.x,obj_camera.y - 30,"<  " + string(nb_players) + "  >",0.9,0.9,0)
 	draw_text_transformed(obj_camera.x,obj_camera.y,"Press space to start",0.9,0.9,0)
+	draw_set_valign(fa_top)
+	if nb_players > 1{
+		draw_text_transformed(obj_camera.x,obj_camera.y + 15,"-- How to play --\nYou each control a highly skilled bean and your goal is to be the last one standing on the mountain!\nYou can climb by moving one hand at the time and holding to the cliff.\nYou must dodge upcoming rocks and birds and other people slaps.\nYou can pickup powerups by grabbing onto them!\nGood luck!",0.5,0.5,0)
+	} else{
+		draw_text_transformed(obj_camera.x,obj_camera.y + 15,"-- How to play --\nYou control a highly skilled bean and your goal is to climb the highest you can!\nYou can climb by moving one hand at the time and holding to the cliff.\nYou must dodge upcoming rocks and birds, or else you loose points.\nYou can pickup powerups by grabbing onto them and slap birds for extra points!\nGood luck!",0.5,0.5,0)	
+	}
 }

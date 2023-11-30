@@ -99,7 +99,7 @@ if press_next && control{
 		}
 	}
 	if _index = 0{
-		obj_son.play_sound(snd_grab,0.1)
+		obj_son.play_sound(snd_grab,0.3)
 	}
 	repeat(8){
 		with(instance_create_depth(handX[hand_selected], handY[hand_selected],depth - 3, obj_part_grab)){

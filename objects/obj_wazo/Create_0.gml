@@ -1,6 +1,6 @@
 side = sign(room_width/2 - x)
 
-walkspd = 0.3
+walkspd = 0.1
 acc = 0.005
 
 size = random_range(1.2,1.4)
