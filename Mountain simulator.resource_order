@@ -52,6 +52,7 @@
     {"name":"spr_part_boulder","order":2,"path":"sprites/spr_part_boulder/spr_part_boulder.yy",},
     {"name":"snd_cri","order":9,"path":"sounds/snd_cri/snd_cri.yy",},
     {"name":"obj_feather","order":1,"path":"objects/obj_feather/obj_feather.yy",},
+    {"name":"spr_main","order":25,"path":"sprites/spr_main/spr_main.yy",},
     {"name":"obj_part_grab","order":2,"path":"objects/obj_part_grab/obj_part_grab.yy",},
     {"name":"snd_bird_dead","order":1,"path":"sounds/snd_bird_dead/snd_bird_dead.yy",},
     {"name":"snd_loose","order":8,"path":"sounds/snd_loose/snd_loose.yy",},

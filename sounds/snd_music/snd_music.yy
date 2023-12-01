@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 48.0653,
+  "duration": 167.26204,
   "parent": {
     "name": "Sons",
     "path": "folders/Sons.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_music.mp3",
   "type": 0,
-  "volume": 0.0,
+  "volume": 0.3,
 }

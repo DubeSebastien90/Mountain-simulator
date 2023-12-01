@@ -1,6 +1,6 @@
 spd = random_range(1.2, 1.4)
 if obj_game.tempsScale > 30{
-	spd += (obj_game.tempsScale - 30)/10
+	spd += (obj_game.tempsScale - 30)/3
 }
 rotSpd = random_range(1,3)
 rotSpd *= choose(1,-1)

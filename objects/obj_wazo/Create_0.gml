@@ -27,7 +27,7 @@ depth -= 3
 
 function mortAbility(){
 	screenShake(4,10)
-	obj_son.play_sound(snd_bird_dead,0.05)
+	obj_son.play_sound_normal(snd_bird_dead)
 	with(myCollision){
 		instance_destroy()
 	}

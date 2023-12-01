@@ -75,6 +75,7 @@
     {"id":{"name":"spr_part_boulder","path":"sprites/spr_part_boulder/spr_part_boulder.yy",},},
     {"id":{"name":"snd_cri","path":"sounds/snd_cri/snd_cri.yy",},},
     {"id":{"name":"obj_feather","path":"objects/obj_feather/obj_feather.yy",},},
+    {"id":{"name":"spr_main","path":"sprites/spr_main/spr_main.yy",},},
     {"id":{"name":"obj_part_grab","path":"objects/obj_part_grab/obj_part_grab.yy",},},
     {"id":{"name":"snd_bird_dead","path":"sounds/snd_bird_dead/snd_bird_dead.yy",},},
     {"id":{"name":"screenShake","path":"scripts/screenShake/screenShake.yy",},},
