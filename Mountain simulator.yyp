@@ -83,6 +83,8 @@
     {"id":{"name":"snd_grab","path":"sounds/snd_grab/snd_grab.yy",},},
     {"id":{"name":"obj_wazo_collision","path":"objects/obj_wazo_collision/obj_wazo_collision.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
+    {"id":{"name":"spr_banner","path":"sprites/spr_banner/spr_banner.yy",},},
+    {"id":{"name":"spr_banner2","path":"sprites/spr_banner2/spr_banner2.yy",},},
     {"id":{"name":"spr_cloud","path":"sprites/spr_cloud/spr_cloud.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
